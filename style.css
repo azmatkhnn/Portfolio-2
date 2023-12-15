@@ -1,0 +1,209 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
+    text-decoration: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+body{
+    background-color: #1f1f21;
+}
+.navbar{
+    display: flex;
+    justify-content: space-around;
+    margin: 35px;
+    margin-top: 18px;
+}
+.left{
+    color: white;
+}
+.right{
+    position: relative;
+    top: 5px;
+}
+.navbar ul{
+    display: flex;
+}
+.navbar a{
+    justify-content: space-between;
+    margin: 0 19px;
+    color: white;
+    font-size: 12px;
+    transition: all 0.5s ease 0s;
+}
+.navbar a:hover{
+    color: #0052d4;
+    border: white;
+}
+.navbar span{
+    color: #0052d4;
+}
+.navbar a.home{
+    color: #0052d4;
+}
+section span{
+    color: #0052d4;
+}
+section{
+    display: flex;
+    margin-left: -10px;
+    margin-top: 30px;
+}
+.leftSection{
+    margin-left: 50px;
+    color: white;
+    width: 500px;
+    position: relative;
+    top: 30px;
+    left: 20px;
+}
+.leftSection h1{
+    font-size: 50px;
+}
+img{
+    border-radius: 5px;
+    width: 210px;
+    position: relative;
+    right: 25px;
+    animation: imgg 3s ease-in-out infinite;
+    animation-delay: 1s;
+}
+.leftSection p{
+    line-height: 25px;
+    font-size: 10px;
+    width: 400px;
+}
+.leftSection h3{
+    font-size: 10px;
+    position: relative;
+    /* left: 10px; */
+    top: 0px;
+    /* background: linear-gradient(130.08deg, rgb(56, 53, 40) 0%, rgb(25, 25, 25) 100%); */
+    /* border-radius: 100px; */
+}
+button{
+    background-color: #0052d4 ;
+    padding: 6px 9px;
+    border: 2px solid white ;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border-radius: 5px;
+    font-size: 10px;
+    cursor: pointer;
+    position: relative;
+    /* left: 10px; */
+    margin-top: 8px;
+    transition: all 0.6s ease-out 0s;
+}
+button:hover{
+    transform: translate(5px);
+    background: white;
+    color: #0052d4;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+@media screen and (max-width: 800px) {
+   .navbar{
+    font-size: small;
+    display: flex;
+    flex-direction: column;
+   }
+   .left{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: row;
+    position: relative;
+    left: 80px;
+    width: 120px;
+   }
+   .left h1{
+    font-size: 22px;
+   }
+   .right{
+    position: relative;
+    right: 35px;
+   }
+   section{
+    display: flex;
+    flex-direction: column;
+   }
+   .leftSection{
+    width: 70%;
+    height: 50vw;
+    margin-top: 30px;
+   }
+   .leftSection p{
+    width: 55%;
+   }
+   .navbar a{
+    margin: 0px 17px;
+    font-size: 12px;
+   }
+   .navbar ul li{
+    width: 300px;
+    margin-top: 10px;
+    margin-left: 2px;
+   }
+   .rightSection{
+    position: relative;
+    /* left: 10px; */
+    /* top: -200px; */
+   }
+   .leftSection{
+    position: relative;
+    /* left: 70px; */
+    top: 240px;
+   }
+   .leftSection p{
+    width: 250px;
+    text-align: center;
+    font-size: 15px;
+   }
+   .leftSection h1{
+    font-size: 40px;
+    text-align: center;
+   }
+   .leftSection h3{
+    font-size: 15px;
+    text-align: center;
+   }
+   img{
+    position: relative;
+    left: 69px;
+    /* justify-content: center; */
+    top: -210px;
+    width: 250px;
+    animation: imgg 3s ease-in-out infinite;
+    animation-delay: 2s;
+   }
+   @keyframes imgg {
+    0%{
+    transform: translateY(0);
+    }
+    50%{
+        transform: translateY(0);
+    }
+    100%{
+        transform: translateY(0);
+    }
+   }
+   button{
+    position: relative;
+    left: 80px;
+    width: 100px;
+    height: 40px;
+    font-size: 14px;
+    border-radius: 8px;
+   }
+}
+@keyframes imgg {
+    0%{
+    transform: translateY(0);
+    }
+    50%{
+        transform: translateY(-7px);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
